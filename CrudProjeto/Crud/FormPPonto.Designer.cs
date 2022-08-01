@@ -66,6 +66,7 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel2.Controls.Add(this.btnSair);
+            this.panel2.Controls.Add(this.buttonMenu);
             this.panel2.Location = new System.Drawing.Point(-4, 1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(234, 1079);
@@ -100,7 +101,7 @@
             // 
             this.labelIP.AutoSize = true;
             this.labelIP.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelIP.Location = new System.Drawing.Point(1111, 294);
+            this.labelIP.Location = new System.Drawing.Point(1111, 337);
             this.labelIP.Name = "labelIP";
             this.labelIP.Size = new System.Drawing.Size(29, 22);
             this.labelIP.TabIndex = 4;
@@ -122,7 +123,7 @@
             // 
             this.labelNopo.AutoSize = true;
             this.labelNopo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNopo.Location = new System.Drawing.Point(1111, 528);
+            this.labelNopo.Location = new System.Drawing.Point(1111, 501);
             this.labelNopo.Name = "labelNopo";
             this.labelNopo.Size = new System.Drawing.Size(136, 22);
             this.labelNopo.TabIndex = 6;
@@ -133,7 +134,7 @@
             // 
             this.labelTiPo.AutoSize = true;
             this.labelTiPo.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTiPo.Location = new System.Drawing.Point(1111, 642);
+            this.labelTiPo.Location = new System.Drawing.Point(1111, 592);
             this.labelTiPo.Name = "labelTiPo";
             this.labelTiPo.Size = new System.Drawing.Size(126, 22);
             this.labelTiPo.TabIndex = 7;
@@ -142,7 +143,7 @@
             // textBoxIP
             // 
             this.textBoxIP.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxIP.Location = new System.Drawing.Point(1273, 294);
+            this.textBoxIP.Location = new System.Drawing.Point(1284, 333);
             this.textBoxIP.Name = "textBoxIP";
             this.textBoxIP.Size = new System.Drawing.Size(353, 26);
             this.textBoxIP.TabIndex = 9;
@@ -158,7 +159,7 @@
             // textBoxNoDPon
             // 
             this.textBoxNoDPon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNoDPon.Location = new System.Drawing.Point(1273, 528);
+            this.textBoxNoDPon.Location = new System.Drawing.Point(1273, 501);
             this.textBoxNoDPon.Name = "textBoxNoDPon";
             this.textBoxNoDPon.Size = new System.Drawing.Size(353, 26);
             this.textBoxNoDPon.TabIndex = 11;
@@ -169,9 +170,9 @@
             this.buttonFazerCadas.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.buttonFazerCadas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonFazerCadas.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonFazerCadas.Location = new System.Drawing.Point(1465, 782);
+            this.buttonFazerCadas.Location = new System.Drawing.Point(664, 726);
             this.buttonFazerCadas.Name = "buttonFazerCadas";
-            this.buttonFazerCadas.Size = new System.Drawing.Size(184, 55);
+            this.buttonFazerCadas.Size = new System.Drawing.Size(184, 51);
             this.buttonFazerCadas.TabIndex = 13;
             this.buttonFazerCadas.Text = "Fazer Cadastro";
             this.buttonFazerCadas.UseVisualStyleBackColor = false;
@@ -183,7 +184,7 @@
             this.buttonLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonLimpar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonLimpar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.buttonLimpar.Location = new System.Drawing.Point(1465, 721);
+            this.buttonLimpar.Location = new System.Drawing.Point(335, 726);
             this.buttonLimpar.Name = "buttonLimpar";
             this.buttonLimpar.Size = new System.Drawing.Size(184, 55);
             this.buttonLimpar.TabIndex = 14;
@@ -194,7 +195,7 @@
             // txtTipo
             // 
             this.txtTipo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTipo.Location = new System.Drawing.Point(1273, 642);
+            this.txtTipo.Location = new System.Drawing.Point(1284, 592);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(353, 26);
             this.txtTipo.TabIndex = 16;
@@ -205,9 +206,9 @@
             this.btnAtualizar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAtualizar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAtualizar.Location = new System.Drawing.Point(1465, 843);
+            this.btnAtualizar.Location = new System.Drawing.Point(983, 726);
             this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(184, 57);
+            this.btnAtualizar.Size = new System.Drawing.Size(184, 55);
             this.btnAtualizar.TabIndex = 17;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = false;
@@ -219,7 +220,7 @@
             this.btnDeletar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDeletar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeletar.Location = new System.Drawing.Point(1465, 906);
+            this.btnDeletar.Location = new System.Drawing.Point(1330, 726);
             this.btnDeletar.Name = "btnDeletar";
             this.btnDeletar.Size = new System.Drawing.Size(184, 55);
             this.btnDeletar.TabIndex = 18;
@@ -232,9 +233,9 @@
             this.buttonMenu.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.buttonMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonMenu.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMenu.Location = new System.Drawing.Point(1465, 967);
+            this.buttonMenu.Location = new System.Drawing.Point(25, 397);
             this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(184, 45);
+            this.buttonMenu.Size = new System.Drawing.Size(184, 46);
             this.buttonMenu.TabIndex = 13;
             this.buttonMenu.Text = "Menu";
             this.buttonMenu.UseVisualStyleBackColor = false;
@@ -245,7 +246,7 @@
             this.labelPesquisar.AutoSize = true;
             this.labelPesquisar.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPesquisar.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.labelPesquisar.Location = new System.Drawing.Point(345, 484);
+            this.labelPesquisar.Location = new System.Drawing.Point(319, 265);
             this.labelPesquisar.Name = "labelPesquisar";
             this.labelPesquisar.Size = new System.Drawing.Size(103, 31);
             this.labelPesquisar.TabIndex = 20;
@@ -258,7 +259,7 @@
             this.labelVerPontos.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.labelVerPontos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.labelVerPontos.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelVerPontos.Location = new System.Drawing.Point(489, 275);
+            this.labelVerPontos.Location = new System.Drawing.Point(463, 102);
             this.labelVerPontos.Name = "labelVerPontos";
             this.labelVerPontos.Size = new System.Drawing.Size(302, 55);
             this.labelVerPontos.TabIndex = 19;
@@ -284,7 +285,7 @@
             this.PontodataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.PontodataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.PontodataGridView1.GridColor = System.Drawing.Color.Salmon;
-            this.PontodataGridView1.Location = new System.Drawing.Point(339, 552);
+            this.PontodataGridView1.Location = new System.Drawing.Point(313, 333);
             this.PontodataGridView1.Name = "PontodataGridView1";
             this.PontodataGridView1.Size = new System.Drawing.Size(545, 285);
             this.PontodataGridView1.TabIndex = 24;
@@ -300,7 +301,6 @@
             this.Controls.Add(this.labelPonto);
             this.Controls.Add(this.labelPesquisar);
             this.Controls.Add(this.labelVerPontos);
-            this.Controls.Add(this.buttonMenu);
             this.Controls.Add(this.btnDeletar);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.txtTipo);

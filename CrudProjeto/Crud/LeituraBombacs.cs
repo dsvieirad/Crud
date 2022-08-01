@@ -40,6 +40,8 @@ namespace Crud
 
         private void btnCad_Click(object sender, EventArgs e)
         {
+            string valid;
+            valid = txtNome.Text.Trim(); txtStatus.Text.Trim();
 
             try
             {
@@ -50,13 +52,21 @@ namespace Crud
                 comando.Parameters.AddWithValue("@Status", txtStatus.Text);
                 comando.Parameters.AddWithValue("@Data_e_hora", dateTimePicker1.Value);
 
-                conexao.Open();
-                MessageBox.Show("Bomba Cadastrada!");
-                comando.ExecuteNonQuery();
-                GetPonto();
+               if( valid == "")
+                {
+                    MessageBox.Show("Preencha os campos");
+                    
+                }
+                else
+                {
+                    conexao.Open();
+                    MessageBox.Show("Bomba Cadastrada!");
+                    comando.ExecuteNonQuery();
+                    GetPonto();
 
-                txtNome.Clear();
-                txtStatus.Clear();
+                    txtNome.Clear();
+                    txtStatus.Clear();
+                }
 
 
             }

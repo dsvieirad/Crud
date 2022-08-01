@@ -74,9 +74,9 @@
             this.btnSair.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSair.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(17, 398);
+            this.btnSair.Location = new System.Drawing.Point(17, 442);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(210, 58);
+            this.btnSair.Size = new System.Drawing.Size(210, 44);
             this.btnSair.TabIndex = 17;
             this.btnSair.Text = "Sair";
             this.btnSair.UseVisualStyleBackColor = false;
@@ -87,9 +87,9 @@
             this.buttonMenu.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.buttonMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonMenu.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMenu.Location = new System.Drawing.Point(17, 569);
+            this.buttonMenu.Location = new System.Drawing.Point(12, 565);
             this.buttonMenu.Name = "buttonMenu";
-            this.buttonMenu.Size = new System.Drawing.Size(210, 58);
+            this.buttonMenu.Size = new System.Drawing.Size(210, 43);
             this.buttonMenu.TabIndex = 16;
             this.buttonMenu.Text = "Menu";
             this.buttonMenu.UseVisualStyleBackColor = false;
@@ -113,7 +113,7 @@
             this.labelFazerCadas.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.labelFazerCadas.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelFazerCadas.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labelFazerCadas.Location = new System.Drawing.Point(1156, 214);
+            this.labelFazerCadas.Location = new System.Drawing.Point(1090, 154);
             this.labelFazerCadas.Name = "labelFazerCadas";
             this.labelFazerCadas.Size = new System.Drawing.Size(527, 55);
             this.labelFazerCadas.TabIndex = 3;
@@ -124,7 +124,7 @@
             // 
             this.labelNome.AutoSize = true;
             this.labelNome.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNome.Location = new System.Drawing.Point(1155, 388);
+            this.labelNome.Location = new System.Drawing.Point(1089, 361);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(58, 22);
             this.labelNome.TabIndex = 5;
@@ -134,7 +134,7 @@
             // 
             this.labelEmail.AutoSize = true;
             this.labelEmail.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmail.Location = new System.Drawing.Point(1155, 514);
+            this.labelEmail.Location = new System.Drawing.Point(1089, 454);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(58, 22);
             this.labelEmail.TabIndex = 6;
@@ -144,7 +144,7 @@
             // 
             this.labelSenha.AutoSize = true;
             this.labelSenha.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSenha.Location = new System.Drawing.Point(1155, 627);
+            this.labelSenha.Location = new System.Drawing.Point(1089, 544);
             this.labelSenha.Name = "labelSenha";
             this.labelSenha.Size = new System.Drawing.Size(60, 22);
             this.labelSenha.TabIndex = 7;
@@ -154,7 +154,7 @@
             // 
             this.textBoxNome.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBoxNome.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNome.Location = new System.Drawing.Point(1322, 388);
+            this.textBoxNome.Location = new System.Drawing.Point(1256, 361);
             this.textBoxNome.MaxLength = 327;
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(326, 26);
@@ -164,7 +164,7 @@
             // 
             this.textBoxEmail.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBoxEmail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEmail.Location = new System.Drawing.Point(1322, 514);
+            this.textBoxEmail.Location = new System.Drawing.Point(1256, 454);
             this.textBoxEmail.MaxLength = 40;
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(326, 26);
@@ -173,7 +173,7 @@
             // textBoxSenha
             // 
             this.textBoxSenha.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSenha.Location = new System.Drawing.Point(1322, 627);
+            this.textBoxSenha.Location = new System.Drawing.Point(1256, 544);
             this.textBoxSenha.MaxLength = 10;
             this.textBoxSenha.Name = "textBoxSenha";
             this.textBoxSenha.Size = new System.Drawing.Size(326, 26);
@@ -186,7 +186,7 @@
             this.buttonCadastrar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.buttonCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonCadastrar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCadastrar.Location = new System.Drawing.Point(1462, 799);
+            this.buttonCadastrar.Location = new System.Drawing.Point(304, 696);
             this.buttonCadastrar.Name = "buttonCadastrar";
             this.buttonCadastrar.Size = new System.Drawing.Size(221, 44);
             this.buttonCadastrar.TabIndex = 14;
@@ -199,7 +199,7 @@
             this.buttonAtualizar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.buttonAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAtualizar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAtualizar.Location = new System.Drawing.Point(1462, 861);
+            this.buttonAtualizar.Location = new System.Drawing.Point(696, 696);
             this.buttonAtualizar.Name = "buttonAtualizar";
             this.buttonAtualizar.Size = new System.Drawing.Size(221, 44);
             this.buttonAtualizar.TabIndex = 15;
@@ -212,7 +212,7 @@
             this.buttonCancelar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonCancelar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancelar.Location = new System.Drawing.Point(1462, 979);
+            this.buttonCancelar.Location = new System.Drawing.Point(1388, 696);
             this.buttonCancelar.Name = "buttonCancelar";
             this.buttonCancelar.Size = new System.Drawing.Size(221, 44);
             this.buttonCancelar.TabIndex = 16;
@@ -225,7 +225,7 @@
             this.buttonDeletar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.buttonDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonDeletar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDeletar.Location = new System.Drawing.Point(1462, 920);
+            this.buttonDeletar.Location = new System.Drawing.Point(1039, 696);
             this.buttonDeletar.Name = "buttonDeletar";
             this.buttonDeletar.Size = new System.Drawing.Size(221, 44);
             this.buttonDeletar.TabIndex = 17;
@@ -239,7 +239,7 @@
             this.dataGridViewUser.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dataGridViewUser.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewUser.GridColor = System.Drawing.Color.Salmon;
-            this.dataGridViewUser.Location = new System.Drawing.Point(323, 564);
+            this.dataGridViewUser.Location = new System.Drawing.Point(347, 336);
             this.dataGridViewUser.Name = "dataGridViewUser";
             this.dataGridViewUser.Size = new System.Drawing.Size(506, 291);
             this.dataGridViewUser.TabIndex = 19;
@@ -250,7 +250,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightSeaGreen;
-            this.label1.Location = new System.Drawing.Point(318, 510);
+            this.label1.Location = new System.Drawing.Point(342, 282);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(110, 26);
             this.label1.TabIndex = 20;

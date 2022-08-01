@@ -78,7 +78,7 @@
             // 
             this.btnSair.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSair.Location = new System.Drawing.Point(338, 604);
+            this.btnSair.Location = new System.Drawing.Point(1098, 328);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(90, 29);
             this.btnSair.TabIndex = 4;

@@ -54,6 +54,7 @@
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.buttonSair);
             this.panel2.Location = new System.Drawing.Point(-8, -27);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(225, 1143);
@@ -63,9 +64,9 @@
             // 
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(30, 522);
+            this.button1.Location = new System.Drawing.Point(38, 377);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(161, 48);
+            this.button1.Size = new System.Drawing.Size(184, 48);
             this.button1.TabIndex = 0;
             this.button1.Text = "Menu";
             this.button1.UseVisualStyleBackColor = true;
@@ -99,9 +100,9 @@
             this.buttonSair.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.buttonSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSair.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSair.Location = new System.Drawing.Point(1479, 947);
+            this.buttonSair.Location = new System.Drawing.Point(38, 516);
             this.buttonSair.Name = "buttonSair";
-            this.buttonSair.Size = new System.Drawing.Size(232, 54);
+            this.buttonSair.Size = new System.Drawing.Size(184, 44);
             this.buttonSair.TabIndex = 8;
             this.buttonSair.Text = "Sair";
             this.buttonSair.UseVisualStyleBackColor = false;
@@ -165,7 +166,6 @@
             this.Controls.Add(this.btnVazao);
             this.Controls.Add(this.btnPonto);
             this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.buttonSair);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);

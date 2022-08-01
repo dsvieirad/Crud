@@ -31,6 +31,9 @@ namespace Crud
         {
             try
             {
+                string valid;
+                valid = textBoxIP.Text.Trim(); textBoxPorta.Text.Trim(); textBoxNoDPon.Text.Trim(); txtTipo.Text.Trim();
+
                 conexao = new MySqlConnection("server = 127.0.0.1;User Id=root;password=admin;database=crud");
                 strSQL = "INSERT INTO PONTO ( IP, PORTA, NOME_DO_PONTO, TIPO_DE_PONTO) VALUES ( @IP, @PORTA, @NOME_DO_PONTO, @TIPO_DE_PONTO)";
                 comando = new MySqlCommand(strSQL, conexao);
@@ -40,9 +43,19 @@ namespace Crud
                 comando.Parameters.AddWithValue("@Nome_do_ponto",textBoxNoDPon.Text);
                 comando.Parameters.AddWithValue("@Tipo_de_ponto",txtTipo.Text);
                 
-                comando.ExecuteNonQuery();
-                MessageBox.Show("Cadastro realizado!");
-                GetPonto();
+                // impede que o cadastro seja realizado com os campos vazios.
+                if(valid == "")
+                {
+                    MessageBox.Show("Preencha os dados");
+                
+                }
+                else
+                {
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("Cadastro realizado!");
+                    GetPonto();
+                }
+               
 
             }
             catch (Exception)
@@ -136,7 +149,7 @@ namespace Crud
            
         }
         public void GetPonto()
-        {
+        {   //função para exibir os dados atualiazados em tempo real na tabela
             conexao = new MySqlConnection("server = 127.0.0.1;User Id=root;password=admin;database=crud");
             strSQL = ("SELECT * FROM PONTO ");
             conexao.Open();
@@ -156,6 +169,7 @@ namespace Crud
 
         private void PontodataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            //permite selecionar uma determinada linha no datagridview
             int select_row;
             if(e.RowIndex >= 0)
             {

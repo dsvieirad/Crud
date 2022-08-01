@@ -48,6 +48,7 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.panel1.Controls.Add(this.buttonMenu);
+            this.panel1.Controls.Add(this.buttonSair);
             this.panel1.Location = new System.Drawing.Point(-2, -8);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(219, 1072);
@@ -57,7 +58,7 @@
             // 
             this.buttonMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonMenu.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonMenu.Location = new System.Drawing.Point(0, 513);
+            this.buttonMenu.Location = new System.Drawing.Point(15, 396);
             this.buttonMenu.Name = "buttonMenu";
             this.buttonMenu.Size = new System.Drawing.Size(204, 48);
             this.buttonMenu.TabIndex = 6;
@@ -101,9 +102,9 @@
             this.buttonSair.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.buttonSair.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonSair.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonSair.Location = new System.Drawing.Point(1470, 877);
+            this.buttonSair.Location = new System.Drawing.Point(15, 488);
             this.buttonSair.Name = "buttonSair";
-            this.buttonSair.Size = new System.Drawing.Size(241, 60);
+            this.buttonSair.Size = new System.Drawing.Size(204, 47);
             this.buttonSair.TabIndex = 6;
             this.buttonSair.Text = "Sair";
             this.buttonSair.UseVisualStyleBackColor = false;
@@ -129,7 +130,7 @@
             // 
             this.btnNivel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnNivel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnNivel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNivel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNivel.Location = new System.Drawing.Point(424, 364);
             this.btnNivel.Name = "btnNivel";
             this.btnNivel.Size = new System.Drawing.Size(267, 62);
@@ -142,7 +143,7 @@
             // 
             this.btnBomba.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnBomba.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBomba.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBomba.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBomba.Location = new System.Drawing.Point(851, 364);
             this.btnBomba.Name = "btnBomba";
             this.btnBomba.Size = new System.Drawing.Size(267, 62);
@@ -155,8 +156,8 @@
             // 
             this.btnPon.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnPon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnPon.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPon.Location = new System.Drawing.Point(1302, 364);
+            this.btnPon.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPon.Location = new System.Drawing.Point(1281, 364);
             this.btnPon.Name = "btnPon";
             this.btnPon.Size = new System.Drawing.Size(267, 62);
             this.btnPon.TabIndex = 17;
@@ -174,7 +175,6 @@
             this.Controls.Add(this.btnBomba);
             this.Controls.Add(this.btnNivel);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.buttonSair);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.labelAlarme);
             this.Controls.Add(this.panel2);

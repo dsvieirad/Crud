@@ -35,6 +35,8 @@ namespace Crud
 
             try
             {
+                string valid;
+                valid = textBoxNome.Text.Trim(); textBoxEmail.Text.Trim(); maskedTextBox1.Text.Trim();
                 conexao = new MySqlConnection("server = 127.0.0.1;User Id=root;password=admin;database=crud");
                 strSQL = "INSERT INTO CAD_USER (NOME, EMAIL, SENHA) VALUES ( @NOME, @EMAIL, @SENHA)";
                 comando = new MySqlCommand(strSQL, conexao);
@@ -42,14 +44,21 @@ namespace Crud
                 comando.Parameters.AddWithValue("@Email", textBoxEmail.Text);
                 comando.Parameters.AddWithValue("@Senha", maskedTextBox1.Text);
                 
+                if(valid == "")
+                {
+                    MessageBox.Show("Preencha os campos");
+                    
+                }
+                else
+                {
+                    conexao.Open();
+                    MessageBox.Show("Usuario criado!");
+                    comando.ExecuteNonQuery();
 
-                conexao.Open();
-                MessageBox.Show("Usuario criado!");
-                comando.ExecuteNonQuery();
 
-
-                textBoxNome.Clear();
-                textBoxEmail.Clear();
+                    textBoxNome.Clear();
+                    textBoxEmail.Clear();
+                }
               
 
             }

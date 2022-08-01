@@ -49,6 +49,11 @@ namespace Crud
 
             try
             {
+
+                string valid;
+               
+                valid =textBox1.Text.Trim(); txtVazao.Text.Trim();txtVolume.Text.Trim(); txtStatus.Text.Trim();
+
                 conexao = new MySqlConnection("server = 127.0.0.1;User Id=root;password=admin;database=crud");
                 strSQL = "INSERT INTO leitura_vazao (NOME,VAZAO, VOLUME, STATUS, DATA_E_HORA) VALUES ( @NOME, @VAZAO, @VOLUME, @STATUS, @DATA_E_HORA)";
                 comando = new MySqlCommand(strSQL, conexao);
@@ -58,14 +63,25 @@ namespace Crud
                 comando.Parameters.AddWithValue("@Status", txtStatus.Text);
                 comando.Parameters.AddWithValue("@Data_e_hora", dateTimePicker1.Value);
 
-                conexao.Open();
-                MessageBox.Show("Vazão Cadastrada!");
-                comando.ExecuteNonQuery();
-                GetPonto();
+                if(valid == "")
+                {
+                    MessageBox.Show("Preencha os campos");
+            
 
-                txtVazao.Clear();
-                txtStatus.Clear();
-                txtVolume.Clear();
+                }
+                else
+                {
+                    conexao.Open();
+                    MessageBox.Show("Vazão Cadastrada!");
+                    comando.ExecuteNonQuery();
+                    GetPonto();
+
+                    txtVazao.Clear();
+                    txtStatus.Clear();
+                    txtVolume.Clear();
+                }
+                
+               
 
 
             }

@@ -30,6 +30,9 @@ namespace Crud
 
         private void buttonCadastrar_Click(object sender, EventArgs e)
         {
+            string valid;
+            valid = textBoxNome.Text.Trim(); textBoxEmail.Text.Trim(); textBoxSenha.Text.Trim();
+
             try
             {
                 conexao = new MySqlConnection("server = 127.0.0.1;User Id=root;password=admin;database=crud");
@@ -39,13 +42,23 @@ namespace Crud
                 comando.Parameters.AddWithValue("@Email", textBoxEmail.Text);
                 comando.Parameters.AddWithValue("@Senha", textBoxSenha.Text);
                
-                conexao.Open();
-                MessageBox.Show("Usuario criado!");
-                comando.ExecuteNonQuery();
-                GetPonto();
+                // impede o cadastro dos campos vazios
+                if(valid == "")
+                {
+                    MessageBox.Show("Preencha os campos!");
+                   
+                }
+                else
+                {
+                    conexao.Open();
+                    MessageBox.Show("Usuario criado!");
+                    comando.ExecuteNonQuery();
+                    GetPonto();
 
-                textBoxNome.Clear();
-                textBoxEmail.Clear();
+                    textBoxNome.Clear();
+                    textBoxEmail.Clear();
+                }
+              
 
 
             }
@@ -61,8 +74,7 @@ namespace Crud
                 comando=null;
             }
 
-            FormPaginaPrincipal p = new FormPaginaPrincipal();
-            p.ShowDialog();
+           
 
         }
 
@@ -138,6 +150,7 @@ namespace Crud
         }
         public void GetPonto()
         {
+            //exibe os dados atualizados na tebela a cada nova ação
             conexao = new MySqlConnection("server = 127.0.0.1;User Id=root;password=admin;database=crud");
             strSQL = ("SELECT * FROM CAD_USER ");
             conexao.Open();
@@ -156,6 +169,7 @@ namespace Crud
 
         private void dataGridViewUser_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            // função de seleção e auto incremento os campos.
             int select_row;
             if (e.RowIndex >= 0)
             {
