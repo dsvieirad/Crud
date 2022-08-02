@@ -14,6 +14,6 @@ namespace Crud
 
         public string Senha { get; set; }
 
-        
+        public string Tipo { get; set; }
     }
 }

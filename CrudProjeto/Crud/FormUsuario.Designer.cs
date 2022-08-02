@@ -40,13 +40,14 @@
             this.labelSenha = new System.Windows.Forms.Label();
             this.textBoxNome = new System.Windows.Forms.TextBox();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
-            this.textBoxSenha = new System.Windows.Forms.TextBox();
             this.buttonCadastrar = new System.Windows.Forms.Button();
             this.buttonAtualizar = new System.Windows.Forms.Button();
-            this.buttonCancelar = new System.Windows.Forms.Button();
             this.buttonDeletar = new System.Windows.Forms.Button();
             this.dataGridViewUser = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxSenha = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewUser)).BeginInit();
             this.SuspendLayout();
@@ -124,7 +125,7 @@
             // 
             this.labelNome.AutoSize = true;
             this.labelNome.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNome.Location = new System.Drawing.Point(1089, 361);
+            this.labelNome.Location = new System.Drawing.Point(1099, 279);
             this.labelNome.Name = "labelNome";
             this.labelNome.Size = new System.Drawing.Size(58, 22);
             this.labelNome.TabIndex = 5;
@@ -134,7 +135,7 @@
             // 
             this.labelEmail.AutoSize = true;
             this.labelEmail.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelEmail.Location = new System.Drawing.Point(1089, 454);
+            this.labelEmail.Location = new System.Drawing.Point(1099, 372);
             this.labelEmail.Name = "labelEmail";
             this.labelEmail.Size = new System.Drawing.Size(58, 22);
             this.labelEmail.TabIndex = 6;
@@ -144,7 +145,7 @@
             // 
             this.labelSenha.AutoSize = true;
             this.labelSenha.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSenha.Location = new System.Drawing.Point(1089, 544);
+            this.labelSenha.Location = new System.Drawing.Point(1099, 462);
             this.labelSenha.Name = "labelSenha";
             this.labelSenha.Size = new System.Drawing.Size(60, 22);
             this.labelSenha.TabIndex = 7;
@@ -154,7 +155,7 @@
             // 
             this.textBoxNome.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBoxNome.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxNome.Location = new System.Drawing.Point(1256, 361);
+            this.textBoxNome.Location = new System.Drawing.Point(1266, 279);
             this.textBoxNome.MaxLength = 327;
             this.textBoxNome.Name = "textBoxNome";
             this.textBoxNome.Size = new System.Drawing.Size(326, 26);
@@ -164,22 +165,11 @@
             // 
             this.textBoxEmail.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBoxEmail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxEmail.Location = new System.Drawing.Point(1256, 454);
+            this.textBoxEmail.Location = new System.Drawing.Point(1266, 372);
             this.textBoxEmail.MaxLength = 40;
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(326, 26);
             this.textBoxEmail.TabIndex = 11;
-            // 
-            // textBoxSenha
-            // 
-            this.textBoxSenha.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSenha.Location = new System.Drawing.Point(1256, 544);
-            this.textBoxSenha.MaxLength = 10;
-            this.textBoxSenha.Name = "textBoxSenha";
-            this.textBoxSenha.Size = new System.Drawing.Size(326, 26);
-            this.textBoxSenha.TabIndex = 12;
-            this.textBoxSenha.UseSystemPasswordChar = true;
-            this.textBoxSenha.TextChanged += new System.EventHandler(this.textBoxSenha_TextChanged);
             // 
             // buttonCadastrar
             // 
@@ -199,7 +189,7 @@
             this.buttonAtualizar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.buttonAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonAtualizar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAtualizar.Location = new System.Drawing.Point(696, 696);
+            this.buttonAtualizar.Location = new System.Drawing.Point(870, 696);
             this.buttonAtualizar.Name = "buttonAtualizar";
             this.buttonAtualizar.Size = new System.Drawing.Size(221, 44);
             this.buttonAtualizar.TabIndex = 15;
@@ -207,31 +197,18 @@
             this.buttonAtualizar.UseVisualStyleBackColor = false;
             this.buttonAtualizar.Click += new System.EventHandler(this.buttonAtualizar_Click);
             // 
-            // buttonCancelar
-            // 
-            this.buttonCancelar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.buttonCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonCancelar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancelar.Location = new System.Drawing.Point(1388, 696);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(221, 44);
-            this.buttonCancelar.TabIndex = 16;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = false;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click_1);
-            // 
             // buttonDeletar
             // 
             this.buttonDeletar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.buttonDeletar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonDeletar.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonDeletar.Location = new System.Drawing.Point(1039, 696);
+            this.buttonDeletar.Location = new System.Drawing.Point(1388, 696);
             this.buttonDeletar.Name = "buttonDeletar";
             this.buttonDeletar.Size = new System.Drawing.Size(221, 44);
-            this.buttonDeletar.TabIndex = 17;
+            this.buttonDeletar.TabIndex = 16;
             this.buttonDeletar.Text = "Deletar";
             this.buttonDeletar.UseVisualStyleBackColor = false;
-            this.buttonDeletar.Click += new System.EventHandler(this.buttonDeletar_Click);
+            this.buttonDeletar.Click += new System.EventHandler(this.buttonCancelar_Click_1);
             // 
             // dataGridViewUser
             // 
@@ -256,19 +233,51 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Usuários:";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(1099, 537);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(141, 22);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Tipo de Usuário";
+            // 
+            // textBoxSenha
+            // 
+            this.textBoxSenha.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textBoxSenha.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSenha.Location = new System.Drawing.Point(1266, 461);
+            this.textBoxSenha.MaxLength = 40;
+            this.textBoxSenha.Name = "textBoxSenha";
+            this.textBoxSenha.Size = new System.Drawing.Size(326, 26);
+            this.textBoxSenha.TabIndex = 22;
+            this.textBoxSenha.UseSystemPasswordChar = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(1266, 537);
+            this.textBox1.MaxLength = 40;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(326, 26);
+            this.textBox1.TabIndex = 23;
+            // 
             // FormUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1924, 1061);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxSenha);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridViewUser);
             this.Controls.Add(this.buttonDeletar);
-            this.Controls.Add(this.buttonCancelar);
             this.Controls.Add(this.buttonAtualizar);
             this.Controls.Add(this.buttonCadastrar);
-            this.Controls.Add(this.textBoxSenha);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.textBoxNome);
             this.Controls.Add(this.labelSenha);
@@ -300,14 +309,15 @@
         private System.Windows.Forms.Label labelSenha;
         private System.Windows.Forms.TextBox textBoxNome;
         private System.Windows.Forms.TextBox textBoxEmail;
-        private System.Windows.Forms.TextBox textBoxSenha;
         private System.Windows.Forms.Button buttonCadastrar;
         private System.Windows.Forms.Button buttonMenu;
         private System.Windows.Forms.Button buttonAtualizar;
-        private System.Windows.Forms.Button buttonCancelar;
         private System.Windows.Forms.Button buttonDeletar;
         private System.Windows.Forms.Button btnSair;
         private System.Windows.Forms.DataGridView dataGridViewUser;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBoxSenha;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

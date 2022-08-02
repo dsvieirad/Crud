@@ -20,6 +20,7 @@ namespace Crud
         MySqlDataAdapter da;
         DataTable dt = new DataTable();
         string strSQL;
+       
 
         public FormPPonto()
         {
@@ -83,6 +84,9 @@ namespace Crud
 
         private void btnDeletar_Click(object sender, EventArgs e)
         {
+            string valid;
+            valid = textBoxIP.Text.Trim(); 
+
             try
             {
                 conexao = new MySqlConnection("server = 127.0.0.1;User Id=root;password=admin;database=crud");
@@ -90,10 +94,20 @@ namespace Crud
                 comando = new MySqlCommand(strSQL, conexao);
                 conexao.Open();
                 comando.Parameters.AddWithValue("@IP", textBoxIP.Text);
-                MessageBox.Show("Ponto Deletado!");
-                comando.ExecuteNonQuery();
-                GetPonto();
-                
+
+
+                if (valid == "")
+                {
+                    MessageBox.Show("Preencha os dados");
+
+                }
+                else
+                {
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("Cadastro realizado!");
+                    GetPonto();
+                }
+
             }
             catch
             {
@@ -109,6 +123,9 @@ namespace Crud
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
+            string valid;
+            valid = textBoxIP.Text.Trim();
+
             try
             {
                 conexao = new MySqlConnection("server = 127.0.0.1;User Id=root;password=admin;database=crud");
@@ -120,9 +137,17 @@ namespace Crud
                 comando.Parameters.AddWithValue("@Nome_do_ponto", textBoxNoDPon.Text);
                 comando.Parameters.AddWithValue("@Tipo_de_ponto", txtTipo.Text);
 
-                comando.ExecuteNonQuery();
-                MessageBox.Show("Ponto Atualizado!");
-                GetPonto();
+                if (valid == "")
+                {
+                    MessageBox.Show("Preencha os dados");
+
+                }
+                else
+                {
+                    comando.ExecuteNonQuery();
+                    MessageBox.Show("Cadastro realizado!");
+                    GetPonto();
+                }
             }
             catch
             {

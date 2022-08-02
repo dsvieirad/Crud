@@ -36,11 +36,12 @@ namespace Crud
             try
             {
                 conexao = new MySqlConnection("server = 127.0.0.1;User Id=root;password=admin;database=crud");
-                strSQL = "INSERT INTO CAD_USER (NOME, EMAIL, SENHA) VALUES ( @NOME, @EMAIL, @SENHA)";
+                strSQL = "INSERT INTO CAD_USER (NOME, EMAIL, SENHA, TIPO_DE_USER) VALUES ( @NOME, @EMAIL, @SENHA, @TIPO_DE_USER)";
                 comando = new MySqlCommand(strSQL,conexao);
                 comando.Parameters.AddWithValue("@Nome", textBoxNome.Text);
                 comando.Parameters.AddWithValue("@Email", textBoxEmail.Text);
                 comando.Parameters.AddWithValue("@Senha", textBoxSenha.Text);
+                comando.Parameters.AddWithValue("@Tipo_de_user", textBox1.Text);
                
                 // impede o cadastro dos campos vazios
                 if(valid == "")
@@ -57,6 +58,8 @@ namespace Crud
 
                     textBoxNome.Clear();
                     textBoxEmail.Clear();
+                    textBoxSenha.Clear();
+                    textBox1.Clear();
                 }
               
 
@@ -78,11 +81,6 @@ namespace Crud
 
         }
 
-        private void textBoxSenha_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void buttonMenu_Click(object sender, EventArgs e)
         {
             FormPaginaPrincipal p = new FormPaginaPrincipal();
@@ -91,10 +89,49 @@ namespace Crud
 
         private void buttonCancelar_Click_1(object sender, EventArgs e)
         {
-            this.Close();
+            
+            string valid;
+            valid = textBoxNome.Text.Trim(); 
+            try
+            {
+                conexao = new MySqlConnection("server = 127.0.0.1;User Id=root;password=admin;database=crud");
+                strSQL = "DELETE FROM CAD_USER  WHERE Nome= @Nome";
+                comando = new MySqlCommand(strSQL, conexao);
+                comando.Parameters.AddWithValue("@Nome", textBoxNome.Text);
+
+                if (valid == "")
+                {
+                    MessageBox.Show("Preencha os campos!");
+
+                }
+                else
+                {
+                    conexao.Open();
+                    MessageBox.Show("Usuario criado!");
+                    comando.ExecuteNonQuery();
+                    GetPonto();
+
+                    textBoxNome.Clear();
+                    
+                }
+
+            }
+            catch
+            {
+                MessageBox.Show("Não conectado");
+            }
+            finally
+            {
+                conexao.Close();
+                conexao = null;
+                comando = null;
+            }
         }
         private void buttonAtualizar_Click(object sender, EventArgs e)
         {
+            string valid;
+            valid = textBoxNome.Text.Trim(); 
+
             try
             {
                 conexao = new MySqlConnection("server = 127.0.0.1;User Id=root;password=admin;database=crud");
@@ -104,10 +141,22 @@ namespace Crud
                 comando.Parameters.AddWithValue("@Email", textBoxEmail.Text);
                 comando.Parameters.AddWithValue("@Senha", textBoxSenha.Text);
 
-                conexao.Open();
-                MessageBox.Show("Usuário Editado!");
-                comando.ExecuteNonQuery();
-                GetPonto();
+                if (valid == "")
+                {
+                    MessageBox.Show("Preencha os campos!");
+
+                }
+                else
+                {
+                    conexao.Open();
+                    MessageBox.Show("Usuario criado!");
+                    comando.ExecuteNonQuery();
+                    GetPonto();
+
+                    textBoxNome.Clear();
+                    textBoxEmail.Clear();
+                    textBoxSenha.Clear();
+                }
 
             }
             catch
@@ -122,32 +171,6 @@ namespace Crud
             }
         }
 
-        private void buttonDeletar_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                conexao = new MySqlConnection("server = 127.0.0.1;User Id=root;password=admin;database=crud");
-                strSQL = "DELETE FROM CAD_USER  WHERE Nome= @Nome";
-                comando = new MySqlCommand(strSQL, conexao);
-                comando.Parameters.AddWithValue("@Nome", textBoxNome.Text);
-
-                conexao.Open();
-                MessageBox.Show("Usuario Deletado!");
-                comando.ExecuteNonQuery();
-                GetPonto();
-
-            }
-            catch
-            {
-                MessageBox.Show("Não conectado");
-            }
-            finally
-            {
-                conexao.Close();
-                conexao = null;
-                comando = null;
-            }
-        }
         public void GetPonto()
         {
             //exibe os dados atualizados na tebela a cada nova ação
@@ -186,5 +209,7 @@ namespace Crud
         {
             this.Close();
         }
+
+       
     }
 }

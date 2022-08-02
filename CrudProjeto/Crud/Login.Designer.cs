@@ -40,6 +40,8 @@
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btnSair = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // panel1
@@ -87,7 +89,7 @@
             // 
             this.labelSenha.AutoSize = true;
             this.labelSenha.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSenha.Location = new System.Drawing.Point(506, 554);
+            this.labelSenha.Location = new System.Drawing.Point(506, 488);
             this.labelSenha.Name = "labelSenha";
             this.labelSenha.Size = new System.Drawing.Size(145, 22);
             this.labelSenha.TabIndex = 4;
@@ -146,7 +148,7 @@
             // 
             this.txtSenha.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.txtSenha.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSenha.Location = new System.Drawing.Point(693, 554);
+            this.txtSenha.Location = new System.Drawing.Point(693, 488);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(390, 29);
             this.txtSenha.TabIndex = 11;
@@ -165,12 +167,34 @@
             this.btnSair.UseVisualStyleBackColor = false;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(510, 560);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(141, 22);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Tipo de Usuário";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(693, 560);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(390, 29);
+            this.textBox1.TabIndex = 14;
+            // 
             // LoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(1885, 1061);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtEmail);
@@ -204,6 +228,8 @@
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

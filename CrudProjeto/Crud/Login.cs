@@ -25,8 +25,6 @@ namespace Crud
         public LoginPage()
         {
             InitializeComponent();
-
-
         }
        
         private void buttonCriar_Click(object sender, EventArgs e)
@@ -44,11 +42,11 @@ namespace Crud
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             try
-            { 
-                
+            {
+                string cmbValue = textBox1.Text;
                 CdasLogin login = new CdasLogin();
                 conexao = new MySqlConnection("server = 127.0.0.1;User Id=root;password=admin;database=crud");
-                strSQL = $"SELECT * FROM CAD_USER WHERE Email='{txtEmail.Text}' AND Senha='{txtSenha.Text}'";
+                strSQL = $"SELECT * FROM CAD_USER WHERE Email='{txtEmail.Text}' AND Senha='{txtSenha.Text}' AND Tipo_de_user='{textBox1.Text}'";
                 conexao.Open();
                 comando = new MySqlCommand(strSQL, conexao);
                 comando.CommandText = strSQL;
@@ -59,16 +57,37 @@ namespace Crud
                     {
                         Email = dr["Email"].ToString(),
                         Senha = dr["Senha"].ToString(),
+                        Tipo = dr["Tipo_de_user"].ToString()
                     };
                 }
-                if (login.Email != null && login.Senha != null)
+                if (login.Email != null && login.Senha != null && login.Tipo != null)
                 {
-                    MessageBox.Show("Você foi logado");
+                    if(cmbValue == "Admin")
+                        
+                    {
+                        MessageBox.Show("Você foi logado");
 
-                    comando.BeginExecuteNonQuery();
+                        comando.BeginExecuteNonQuery();
 
-                    FormPaginaPrincipal p = new FormPaginaPrincipal();
-                    p.ShowDialog();
+                        FormPaginaPrincipal p = new FormPaginaPrincipal();
+                        p.ShowDialog();
+                    }
+
+                     else if (cmbValue == "Normal")
+                     {
+                        MessageBox.Show("Você foi logado");
+
+                        comando.BeginExecuteNonQuery();
+
+                        PaginaUserComun p = new PaginaUserComun();
+                        p.ShowDialog();
+                     }
+
+                        else
+                        {
+                            MessageBox.Show("Erro ao fazer Login");
+                        }
+                   
 
                 }
 
@@ -95,6 +114,7 @@ namespace Crud
         {
             this.txtEmail.Clear();
             this.txtSenha.Clear();
+            this.textBox1.Clear();
             Application.Exit();
         }
 

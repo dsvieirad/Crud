@@ -110,3 +110,4 @@ C:\Users\Danielle\Desktop\Crud\CrudProjeto\Crud\obj\Debug\Crud.AlarBomba.resourc
 C:\Users\Danielle\Desktop\Crud\CrudProjeto\Crud\obj\Debug\Crud.AlarNivel.resources
 C:\Users\Danielle\Desktop\Crud\CrudProjeto\Crud\obj\Debug\Crud.AlarPonto.resources
 C:\Users\Danielle\Desktop\Crud\CrudProjeto\Crud\obj\Debug\Crud.PaginaPComun.resources
+C:\Users\Danielle\Desktop\Crud\CrudProjeto\Crud\obj\Debug\Crud.PaginaUserComun.resources

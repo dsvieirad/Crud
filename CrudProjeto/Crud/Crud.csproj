@@ -168,6 +168,12 @@
     <Compile Include="PaginaPComun.Designer.cs">
       <DependentUpon>PaginaPComun.cs</DependentUpon>
     </Compile>
+    <Compile Include="PaginaUserComun.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaginaUserComun.Designer.cs">
+      <DependentUpon>PaginaUserComun.cs</DependentUpon>
+    </Compile>
     <Compile Include="PontoPesquisar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -213,6 +219,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PaginaPComun.resx">
       <DependentUpon>PaginaPComun.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaginaUserComun.resx">
+      <DependentUpon>PaginaUserComun.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
