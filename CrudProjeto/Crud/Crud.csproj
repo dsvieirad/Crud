@@ -82,145 +82,145 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AlarBomba.cs">
+    <Compile Include="Models\Enum\UserProfile.cs" />
+    <Compile Include="Screens\AlarBomba.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlarBomba.Designer.cs">
+    <Compile Include="Screens\AlarBomba.Designer.cs">
       <DependentUpon>AlarBomba.cs</DependentUpon>
     </Compile>
-    <Compile Include="AlarNivel.cs">
+    <Compile Include="Screens\AlarNivel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlarNivel.Designer.cs">
+    <Compile Include="Screens\AlarNivel.Designer.cs">
       <DependentUpon>AlarNivel.cs</DependentUpon>
     </Compile>
-    <Compile Include="AlarPonto.cs">
+    <Compile Include="Screens\AlarPonto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AlarPonto.Designer.cs">
+    <Compile Include="Screens\AlarPonto.Designer.cs">
       <DependentUpon>AlarPonto.cs</DependentUpon>
     </Compile>
-    <Compile Include="cadasuaser.cs">
+    <Compile Include="Screens\cadasuaser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="cadasuaser.Designer.cs">
+    <Compile Include="Screens\cadasuaser.Designer.cs">
       <DependentUpon>cadasuaser.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadasUser.cs" />
     <Compile Include="CdasLogin.cs" />
-    <Compile Include="FormAlarmecs.cs">
+    <Compile Include="Screens\FormAlarmecs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAlarmecs.Designer.cs">
+    <Compile Include="Screens\FormAlarmecs.Designer.cs">
       <DependentUpon>FormAlarmecs.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPPonto.cs">
+    <Compile Include="Screens\FormPPonto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPPonto.Designer.cs">
+    <Compile Include="Screens\FormPPonto.Designer.cs">
       <DependentUpon>FormPPonto.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormLeitura.cs">
+    <Compile Include="Screens\FormLeitura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormLeitura.Designer.cs">
+    <Compile Include="Screens\FormLeitura.Designer.cs">
       <DependentUpon>FormLeitura.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormPaginaPrincipal.cs">
+    <Compile Include="Screens\FormPaginaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormPaginaPrincipal.Designer.cs">
+    <Compile Include="Screens\FormPaginaPrincipal.Designer.cs">
       <DependentUpon>FormPaginaPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormUsuario.cs">
+    <Compile Include="Screens\FormUsuario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormUsuario.Designer.cs">
+    <Compile Include="Screens\FormUsuario.Designer.cs">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="LeituraBombacs.cs">
+    <Compile Include="Screens\LeituraBombacs.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LeituraBombacs.Designer.cs">
+    <Compile Include="Screens\LeituraBombacs.Designer.cs">
       <DependentUpon>LeituraBombacs.cs</DependentUpon>
     </Compile>
-    <Compile Include="LeituraPonto.cs">
+    <Compile Include="Screens\LeituraPonto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LeituraPonto.Designer.cs">
+    <Compile Include="Screens\LeituraPonto.Designer.cs">
       <DependentUpon>LeituraPonto.cs</DependentUpon>
     </Compile>
-    <Compile Include="LeituraVazao.cs">
+    <Compile Include="Screens\LeituraVazao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LeituraVazao.Designer.cs">
+    <Compile Include="Screens\LeituraVazao.Designer.cs">
       <DependentUpon>LeituraVazao.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Screens\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Screens\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="PaginaPComun.cs">
+    <Compile Include="Screens\PaginaPComun.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PaginaPComun.Designer.cs">
+    <Compile Include="Screens\PaginaPComun.Designer.cs">
       <DependentUpon>PaginaPComun.cs</DependentUpon>
     </Compile>
-    <Compile Include="PaginaUserComun.cs">
+    <Compile Include="Screens\PaginaUserComun.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PaginaUserComun.Designer.cs">
+    <Compile Include="Screens\PaginaUserComun.Designer.cs">
       <DependentUpon>PaginaUserComun.cs</DependentUpon>
     </Compile>
     <Compile Include="PontoPesquisar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <EmbeddedResource Include="AlarBomba.resx">
+    <EmbeddedResource Include="Screens\AlarBomba.resx">
       <DependentUpon>AlarBomba.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AlarNivel.resx">
+    <EmbeddedResource Include="Screens\AlarNivel.resx">
       <DependentUpon>AlarNivel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AlarPonto.resx">
+    <EmbeddedResource Include="Screens\AlarPonto.resx">
       <DependentUpon>AlarPonto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="cadasuaser.resx">
+    <EmbeddedResource Include="Screens\cadasuaser.resx">
       <DependentUpon>cadasuaser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormAlarmecs.resx">
+    <EmbeddedResource Include="Screens\FormAlarmecs.resx">
       <DependentUpon>FormAlarmecs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPPonto.resx">
+    <EmbeddedResource Include="Screens\FormPPonto.resx">
       <DependentUpon>FormPPonto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormLeitura.resx">
+    <EmbeddedResource Include="Screens\FormLeitura.resx">
       <DependentUpon>FormLeitura.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormPaginaPrincipal.resx">
+    <EmbeddedResource Include="Screens\FormPaginaPrincipal.resx">
       <DependentUpon>FormPaginaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormUsuario.resx">
+    <EmbeddedResource Include="Screens\FormUsuario.resx">
       <DependentUpon>FormUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LeituraBombacs.resx">
+    <EmbeddedResource Include="Screens\LeituraBombacs.resx">
       <DependentUpon>LeituraBombacs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LeituraPonto.resx">
+    <EmbeddedResource Include="Screens\LeituraPonto.resx">
       <DependentUpon>LeituraPonto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LeituraVazao.resx">
+    <EmbeddedResource Include="Screens\LeituraVazao.resx">
       <DependentUpon>LeituraVazao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Screens\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PaginaPComun.resx">
+    <EmbeddedResource Include="Screens\PaginaPComun.resx">
       <DependentUpon>PaginaPComun.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PaginaUserComun.resx">
+    <EmbeddedResource Include="Screens\PaginaUserComun.resx">
       <DependentUpon>PaginaUserComun.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -261,5 +261,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

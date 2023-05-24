@@ -7,13 +7,13 @@ using System.Security.Cryptography;
 
 namespace Crud
 {
-    internal class CdasLogin
+    public class Login
     {
-
-        public string Email { get; set; }
+        private static string email;
+        public string Email { get => email; set => email = value; }
 
         public string Senha { get; set; }
 
-        public string Tipo { get; set; }
+        public string Id { get; set; }
     }
 }
